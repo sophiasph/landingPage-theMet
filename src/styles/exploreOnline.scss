@@ -1,6 +1,6 @@
 .exploreOnline {
   &__gallery {
-    @include pageGrid;
+    @include page-grid;
 
     row-gap: 48px;
     grid-auto-flow: dense;
@@ -9,11 +9,11 @@
   &__product {
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 2 / -2;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 4;
     }
   }

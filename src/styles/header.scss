@@ -26,7 +26,7 @@
     margin: 0;
   }
 
-  @include onTablet {
+  @include on-tablet {
     &__bottom {
       margin-top: 141px;
     }

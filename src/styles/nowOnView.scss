@@ -18,13 +18,13 @@
     grid-column: 1 / -1;
 
     &__photos {
-      @include pageGrid;
+      @include page-grid;
 
       grid-template-rows: 1fr;
     }
 
     &__photos3 {
-      @include pageGridforThreePhoto;
+      @include page-grid-for-three-photo;
 
       grid-template-rows: 1fr;
     }
@@ -33,11 +33,11 @@
       position: relative;
 
       &--wide {
-        @include onTablet {
+        @include on-tablet {
           grid-column: span 4;
         }
 
-        @include onDesktop {
+        @include on-desktop {
           grid-column: span 8;
         }
       }
@@ -46,11 +46,11 @@
         height: 0;
         padding-bottom: 100%;
 
-        @include onTablet {
+        @include on-tablet {
           grid-column: span 2;
         }
 
-        @include onDesktop {
+        @include on-desktop {
           grid-column: span 4;
         }
       }
@@ -71,11 +71,11 @@
     &__info {
       grid-column: span 2;
 
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 6;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 12;
       }
 
@@ -112,11 +112,11 @@
 
   grid-column: span 2;
 
-  @include onTablet {
+  @include on-tablet {
     grid-column: 2 / 6;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     grid-column: 5 / 9;
   }
 
